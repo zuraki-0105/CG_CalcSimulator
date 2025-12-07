@@ -27,7 +27,7 @@ public class ShapeSelectPane extends VBox {
         Button nextBtn = new Button("Next");
         nextBtn.setOnAction(e -> {
             String shape = combo.getValue();
-            if(shape.equals("Circle/Ellipse")) model.setShapeType("Circle");
+            if(shape.equals("Circle/Ellipse")) model.setShapeType("Circle/Ellipse");
             else model.setShapeType(shape);
             
             // 図形に応じて ShapeParamPane へ遷移

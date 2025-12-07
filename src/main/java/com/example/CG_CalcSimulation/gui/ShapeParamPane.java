@@ -26,14 +26,18 @@ public class ShapeParamPane extends VBox {
     TextField fb = new TextField("1");
     
     private int flag = 0;
+    private String shapeType = "";
 
     public ShapeParamPane(InputController controller, InputDataModel model) {
     	this.model = model;
 
     	setSpacing(20);
         setPadding(new Insets(20));
-
-        String shapeType = model.getShapeType();
+        
+        
+        if(model.getShapeType() != null) {
+        	shapeType = model.getShapeType();
+        }
         Label title = new Label("Input Shape Parameters: " + shapeType);
         
         getChildren().add(title);
@@ -53,7 +57,7 @@ public class ShapeParamPane extends VBox {
         // ================================
         // shapeType = circle/ellipse
         // ================================
-         else if(shapeType.equals("Circle")){
+         else if(shapeType.equals("Circle/Ellipse")){
             Label lx = new Label("Center X:");
             Label ly = new Label("Center Y:");
             Label la = new Label("Semi-Major Axis (a):");

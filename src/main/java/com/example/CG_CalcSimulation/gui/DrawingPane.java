@@ -29,8 +29,8 @@ public class DrawingPane extends Pane {
 	private double dragStartX;
 	private double dragStartY;
 	
-	private int W = 600;
-	private int H = 400;
+	private int W = 800;
+	private int H = 600;
 	
 	public DrawingPane() {
 		
@@ -171,8 +171,8 @@ public class DrawingPane extends Pane {
 		double rangeX = maxX - minX;
 		double rangeY = maxY - minY;
 		
-		double scaleX = (W * 0.4) / rangeX;
-		double scaleY = (H * 0.4) / rangeY;
+		double scaleX = (W * 0.2) / rangeX;
+		double scaleY = (H * 0.2) / rangeY;
 		
 		double scale = Math.min(scaleX, scaleY);
 		

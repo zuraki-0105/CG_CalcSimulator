@@ -63,7 +63,7 @@ public class Matrix3 {
 		for (int r = 0; r < 3; r++) {
 			sb.append("[ ");
 			for (int c = 0; c < 3; c++) {
-				sb.append(matrix.get(r, c)).append(" ");
+				sb.append(String.format("%5.2f", matrix.get(r, c))).append(" ");
 			}
 			sb.append("]\n");
 		}

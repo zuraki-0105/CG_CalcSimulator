@@ -140,6 +140,7 @@ public class TransformPane extends VBox {
         // 戻るボタン
         Button backBtn = new Button("Back");
         backBtn.setOnAction(e -> {
+        	model.getTransformCommands().clear();
             controller.switchPane(new ShapeParamPane(controller, model));
         });
 
