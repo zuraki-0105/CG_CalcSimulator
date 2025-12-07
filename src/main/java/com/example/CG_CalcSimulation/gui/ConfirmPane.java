@@ -14,7 +14,7 @@ public class ConfirmPane extends VBox {
         setSpacing(20);
         setAlignment(Pos.CENTER);
 
-        Button exec = new Button("変換実行");
+        Button exec = new Button("変換実行----");
         exec.setOnAction(e -> {
 
             Shapes shape = ((ShapeParamPane) ((InputController)controller)
