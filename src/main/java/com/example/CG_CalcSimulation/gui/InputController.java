@@ -15,11 +15,6 @@ public class InputController {
 
     // 各Pane
     private DimensionPane dimensionPane;
-    private ShapeSelectPane shapeSelectPane;
-    private ShapeParamPane shapeParamPane;
-    private TransformPane transformPane;
-    private ConfirmPane confirmPane;
-    private DrawingPane drawingPane;
 
     public InputController() {
         root = new BorderPane();
