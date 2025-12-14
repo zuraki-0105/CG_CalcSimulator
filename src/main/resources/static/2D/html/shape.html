@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>2D 図形選択</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <h1>2D 図形選択</h1>
+    <p>図形を選択してください。</p>
+
+    <form id="shapeForm">
+
+      <label>
+        <input type="radio" name="shape" value="rectangle" checked> 四角形
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="shape" value="circle"> 円
+      </label>
+      <br><br>
+      <button type="button" id="nextBtn">進む</button>
+      <br><br>
+      <button type="button" id="backBtn">戻る</button>
+
+    </form>
+    <script src="/2d/js/shape.js"></script>
+  </body>
+</html>
