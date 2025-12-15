@@ -12,14 +12,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		Matrix3 mat1 = Transform.translation(3d/2, 0);
-		Matrix3 mat2 = Transform.rotaition(Math.toDegrees(Math.acos(3d/Math.sqrt(13))));
+		Matrix3 mat2 = Transform.rotation(Math.toDegrees(Math.acos(3d/Math.sqrt(13))));
 		Matrix3 mat3 = Transform.custom(
 			new double[][]{
 				{1, 0, 0},
 				{0, -1, 0},
 				{0, 0, 1}
 			});
-		Matrix3 mat4 = Transform.rotaition(Math.toDegrees(-Math.acos(3d/Math.sqrt(13))));
+		Matrix3 mat4 = Transform.rotation(Math.toDegrees(-Math.acos(3d/Math.sqrt(13))));
 		Matrix3 mat5 = Transform.translation(-3d/2, 0);
 //		Matrix3 transfromMatrix = mat1.multiply(mat2).multiply(mat3).multiply(mat4).multiply(mat5);
 		Matrix3 transformMatrix = Matrix3Util.makeTransMatrix(mat1, mat2, mat3, mat4, mat5);

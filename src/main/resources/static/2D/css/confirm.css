@@ -1,0 +1,39 @@
+#shapeInfo {
+  /* 改行・空白をそのまま表示 */
+  white-space: pre;
+
+  /* 等幅フォント（超重要） */
+  font-family: Consolas, "Courier New", monospace;
+
+  /* 左インデント（先頭2スペース相当） */
+  padding-left: 2ch;
+
+  /* 見やすさ（任意） */
+  line-height: 1.6;
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#transformList {
+    /* 改行・空白をそのまま表示 */
+    white-space: pre;
+    
+    /* 等幅フォント（超重要） */
+    font-family: Consolas, "Courier New", monospace;
+    
+    /* 左インデント（先頭2スペース相当） */
+    padding-left: 5ch;
+    
+    /* 見やすさ（任意） */
+    line-height: 1.6;
+    font-size: 14px;
+    
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

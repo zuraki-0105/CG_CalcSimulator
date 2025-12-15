@@ -167,7 +167,7 @@ public class ConfirmPane extends VBox {
     			mat = mat.multiply(m);
     		} 
     		else if(cmd.getType().equals("rotate")) {
-    			Matrix3 m = Transform.rotaition(cmd.getThetaDeg());
+    			Matrix3 m = Transform.rotation(cmd.getThetaDeg());
     			mat = mat.multiply(m);
     		}
     	}

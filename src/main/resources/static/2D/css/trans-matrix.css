@@ -1,0 +1,32 @@
+
+.hidden {
+    display: none;
+}
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 6px;
+}
+
+.matrix-grid input {
+    text-align: center;
+}
+
+#transformList {
+    white-space: pre;
+
+    
+    line-height: 1.6;
+
+    font-size: 14px;
+    font-family: monospace;
+
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5ch;
+    
+    
+}

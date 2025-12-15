@@ -27,7 +27,7 @@ public class Transform {
 	}
 	
 	// 回転行列
-	public static Matrix3 rotaition(double deg) {
+	public static Matrix3 rotation(double deg) {
 		double cos = Math.cos(Math.toRadians(deg));
 		double sin = Math.sin(Math.toRadians(deg));
 		

@@ -2,29 +2,68 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>2D 図形選択</title>
+    <title>CG 投影変換シミュレーター</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/2d/css/shape.css">
   </head>
 
   <body>
     <h1>2D 図形選択</h1>
     <p>図形を選択してください。</p>
 
-    <form id="shapeForm">
+    <select id="shapeType">
+      <option value="">--- 選択してください ---</option>
+      <option value="rectangle">四角形</option>
+      <option value="ellipse">円/楕円</option>
+    </select>
+    <br><br>
+    <hr>
+    <div id="rectParams" class="hidden">
+      <h3>四角形のパラメータ</h3>
 
-      <label>
-        <input type="radio" name="shape" value="rectangle" checked> 四角形
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="shape" value="circle"> 円
-      </label>
-      <br><br>
-      <button type="button" id="nextBtn">進む</button>
-      <br><br>
-      <button type="button" id="backBtn">戻る</button>
+      <label>基準点(左下) X：
+        <input type="number" id="rectX" step="any" value="0">
+      </label><br>
 
-    </form>
-    <script src="/2d/js/shape.js"></script>
+      <label>基準点(左下) Y：
+          <input type="number" id="rectY" step="any" value="0">
+      </label><br>
+
+      <label>幅：
+          <input type="number" id="rectWidth" step="any">
+      </label><br>
+
+      <label>高さ：
+          <input type="number" id="rectHeight" step="any">
+      </label>
+    </div>
+
+    <div id="ellipseParams" class="hidden">
+      <h3>円 / 楕円</h3>
+
+      <label>中心 X：
+          <input type="number" id="ellipseX" step="any" value="0">
+      </label><br>
+
+      <label>中心 Y：
+          <input type="number" id="ellipseY" step="any" value="0">
+      </label><br>
+
+      <label>横半径 a：
+          <input type="number" id="ellipseA" step="any" value="1">
+      </label><br>
+
+      <label>縦半径 b：
+          <input type="number" id="ellipseB" step="any" value="1">
+      </label>
+    </div>
+
+    <br><hr><br>
+    <button type="button" id="nextBtn">次へ</button>
+    <br><br>
+    <button type="button" id="backBtn">戻る</button>
+
+    <script src="/common/js/util.js" type="module"></script>
+    <script src="/2d/js/shape.js" type="module"></script>
   </body>
 </html>

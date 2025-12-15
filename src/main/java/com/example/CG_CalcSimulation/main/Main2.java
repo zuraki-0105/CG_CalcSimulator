@@ -22,7 +22,7 @@ public class Main2 {
 		
 		
 		Ellipse e = new Ellipse(new Point2D(0, 0), 2, 1, 45);
-		Matrix3 em1 = Transform.rotaition(45);
+		Matrix3 em1 = Transform.rotation(45);
 		Matrix3 em2 = Transform.scale(2, 1);
 		Matrix3 em = Matrix3Util.makeTransMatrix(em1,em2);
 		e.printVertexes();

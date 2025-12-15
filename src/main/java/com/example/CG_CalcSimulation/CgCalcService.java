@@ -33,7 +33,7 @@ public class CgCalcService {
 
         Matrix3 T = Transform.translation(tx, ty);
         Matrix3 S = Transform.scale(sx, sy);
-        Matrix3 R = Transform.rotaition(rotDeg);
+        Matrix3 R = Transform.rotation(rotDeg);
 
         // ★行列の掛け方はあなたの TransformPane の意図に合わせてください
         //   一般的には S → R → T の順で適用されます。

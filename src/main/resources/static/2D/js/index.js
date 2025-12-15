@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const selected = document.querySelector('input[name="dimension"]:checked');
 
         if (!selected) {
-            alert("2D または 3D を選択してください");
+            alert("Select a dimension");
             return;
         }
 
